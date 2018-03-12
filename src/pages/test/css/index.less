@@ -1,0 +1,38 @@
+#root {
+    .center {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        .todo-header {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 100px;
+            color: #f5f5f5;
+        }
+        .ant-input-lg {
+            height: 60px;
+            font-size: 26px;
+        }
+        .ant-input-affix-wrapper .ant-input:not(:first-child) {
+            padding-left: 50px;
+        }
+        .content {
+            box-shadow: 0 0 20px #bdbdbd;
+            .list-item {
+                display: flex;
+                align-items: center;
+                height: 50px;
+                line-height: 50px;
+                padding: 0 20px;
+                text-align: left;
+                font-size: 20px;
+                &:not(:first-of-type) {
+                    border-top: 1px solid #e0e0e0;
+                }
+                .item-text {
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
