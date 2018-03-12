@@ -15,6 +15,7 @@ module.exports = {
         ajax: './src/pages/ajax/js/ajax.js',
         login:'./src/pages/login/js/login.js',
         from:'./src/pages/from/js/from.js',
+        test:'./src/pages/test/js/test.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -121,6 +122,11 @@ module.exports = {
             filename: 'view/from.html',
             chunks: ['vendor', 'from'],
             template: 'src/pages/from/from.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'view/test.html',
+            chunks: ['vendor', 'test'],
+            template: 'src/pages/test/test.html'
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',
